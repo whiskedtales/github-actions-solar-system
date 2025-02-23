@@ -52,9 +52,10 @@ jobs:
           
          - name: Install Dependencies
            run: npm install
-           continue-on-error: true
+           
          - name: Code Coverage
            run: npm run code-coverage
+           continue-on-error: true
          
          - name: Archive Test Result
            uses: actions/upload-artifact@v4
